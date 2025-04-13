@@ -29,7 +29,7 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройкуpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionposition
+  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройкуpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionposition
 }
 
 .is-hidden {
@@ -125,4 +125,12 @@ a {
       border: 1px solid var(--light-color);
     }
   }
+}
+
+.section__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 44px;
+  text-align: center;
+  color: #303030;
 }
