@@ -46,7 +46,7 @@
             font-size: 16px;
             line-height: 150%;
             text-align: center;
-            color: #303030;
+            color: var(--neutral-darkest);
         }
 
         span {
@@ -54,7 +54,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 175%;
-            color: #303030;
+            color: var(--neutral-darkest);
             border-radius: 12px;
             padding: 8px 12px;
             min-width: 121px;

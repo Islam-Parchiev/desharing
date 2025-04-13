@@ -56,11 +56,11 @@
             background-color: #ebfaf3;
 
             .subscription__item_title {
-                color: #303030;
+                color: var(--neutral-darkest);
             }
 
             .info__list_item {
-                color: #303030;
+                color: var(--neutral-darkest);
             }
 
             .item__footer_price {

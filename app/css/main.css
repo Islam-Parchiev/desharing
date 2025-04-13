@@ -9,6 +9,7 @@
   --primary-green: #1baa7d;
   --neutral-dark: #494949;
   --neutral-lightest: #f5f5f5;
+  --neutral-darkest: #303030;
 }
 
 *,
@@ -141,7 +142,7 @@ a {
   font-weight: 700;
   font-size: 44px;
   text-align: center;
-  color: #303030;
+  color: var(--neutral-darkest);
 }
 
 .header {
@@ -358,14 +359,14 @@ a {
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  color: #303030;
+  color: var(--neutral-darkest);
 }
 .learn__item span {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 175%;
-  color: #303030;
+  color: var(--neutral-darkest);
   border-radius: 12px;
   padding: 8px 12px;
   min-width: 121px;
@@ -492,14 +493,14 @@ a {
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  color: #303030;
+  color: var(--neutral-darkest);
 }
 .slider__item_body p {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 175%;
-  color: #303030;
+  color: var(--neutral-darkest);
 }
 .slider__item_subject {
   font-family: var(--font-family);
@@ -586,10 +587,10 @@ a {
   background-color: #ebfaf3;
 }
 .subscription__item--primary .subscription__item_title {
-  color: #303030;
+  color: var(--neutral-darkest);
 }
 .subscription__item--primary .info__list_item {
-  color: #303030;
+  color: var(--neutral-darkest);
 }
 .subscription__item--primary .item__footer_price {
   color: var(--primary-green);
@@ -667,6 +668,43 @@ a {
   font-weight: 700;
   font-size: 32px;
   text-align: center;
+}
+
+.question {
+  height: 124px;
+}
+.question__inner {
+  width: 100%;
+  height: 124px;
+  border-radius: 32px;
+  padding: 32px;
+  background-color: #ebfaf3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.question__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--neutral-darkest);
+}
+.question__btn {
+  padding: 20px 36px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #fff;
+  border-radius: 24px;
 }
 
 h1,
