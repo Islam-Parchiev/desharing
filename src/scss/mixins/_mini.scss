@@ -35,9 +35,6 @@ $browser-context: 16; // Default
   background-repeat: no-repeat;
 }
 
-@mixin flex {
-  display: flex;
-}
 
 @mixin flex-v-center {
   display: flex;
