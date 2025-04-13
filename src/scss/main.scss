@@ -4,6 +4,8 @@
 @use "fonts"as fonts;
 @use "settings"as settings;
 
-// подключения компонентов страницы
+
 @use "./components/header"as header;
 
+
+@use "./components/hero"as hero;

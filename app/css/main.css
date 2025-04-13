@@ -1,6 +1,6 @@
 :root {
   --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
+  --content-width: 1216px;
   --container-offset: 23px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --light-color: #fff;
@@ -134,16 +134,24 @@ a {
 .btn {
   border-radius: 20px;
   padding: 12px 20px;
-  width: 92px;
-  height: 43px;
 }
 .btn--primary {
   color: var(--light-color);
-  background: #1baa7d;
+  background: var(--primary-green);
+}
+.btn--primary:hover {
+  color: var(--primary-green);
+  background: var(--light-color);
+  border: 1px solid var(--primary-green);
 }
 .btn--secondary {
   color: var(--black-color);
   background: var(--light-color);
+}
+.btn--secondary:hover {
+  background-color: var(--primary-green);
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
 }
 
 .header {
@@ -189,4 +197,62 @@ a {
   font-weight: 600;
   font-size: 16px;
   color: #fff;
+}
+
+.hero {
+  height: 570px;
+  padding-top: 32px;
+}
+.hero__inner {
+  width: 100%;
+  height: 485px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 38px;
+  background-image: url("./../../img/Hero/hero_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero__info {
+  max-width: 490px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+.hero__info p {
+  max-width: 350px;
+  margin-top: 20px;
+}
+.hero__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 60px;
+  color: #fff;
+}
+.hero p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #fff;
+}
+.hero__btn {
+  margin-top: 56px;
+  width: 196px;
+  height: 60px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
 }/*# sourceMappingURL=main.css.map */
