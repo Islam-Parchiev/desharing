@@ -1,3 +1,33 @@
+// Подключение свайпера
+import Swiper from 'swiper';
+import {
+    Navigation,
+    Pagination
+} from 'swiper/modules';
+Swiper.use([Navigation, Pagination]);
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.slider__btn_left',
+        prevEl: '.slider__btn_right',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+
 // Данный файл - лишь собрание подключений готовых компонентов.
 // Рекомендуется создавать отдельный файл в папке components и подключать все там
 
@@ -48,7 +78,6 @@
 // createPopper(el, tooltip, {
 //   placement: 'right'
 // });
-
 // Подключение свайпера
 // import Swiper from 'swiper';
 // import { Navigation, Pagination } from 'swiper/modules';
