@@ -10559,6 +10559,10 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_selector_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/selector.js */ "./src/js/components/selector.js");
+/* harmony import */ var _components_chart_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/chart.js */ "./src/js/components/chart.js");
+
+
 console.log('components');
 
 /***/ }),
@@ -10684,6 +10688,110 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper', {
 
 // validateForms('.form-1', rules1, afterForm);
 
+/***/ }),
+
+/***/ "./src/js/components/chart.js":
+/*!************************************!*\
+  !*** ./src/js/components/chart.js ***!
+  \************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+const chartParent = document.querySelector('.chart__lines');
+const maxPoints = 200;
+// const testData = [78, 200, 30, 100, 90];
+const testData = [{
+  id: 1,
+  points: 78,
+  date: "24 сен"
+}, {
+  id: 2,
+  points: 200,
+  date: "25 сен"
+}, {
+  id: 3,
+  points: 11,
+  date: "26 сен"
+}, {
+  id: 4,
+  points: 111,
+  date: "27 сен"
+}, {
+  id: 5,
+  points: 33,
+  date: "28 сен"
+}, {
+  id: 6,
+  points: 79,
+  date: "29 сен"
+}, {
+  id: 7,
+  points: 200,
+  date: "25 сен"
+}, {
+  id: 8,
+  points: 11,
+  date: "26 сен"
+}, {
+  id: 9,
+  points: 111,
+  date: "27 сен"
+}, {
+  id: 10,
+  points: 33,
+  date: "28 сен"
+}, {
+  id: 11,
+  points: 79,
+  date: "29 сен"
+}];
+testData.forEach((dataValue, index) => {
+  const chartLine = document.createElement('div');
+  chartLine.classList.add('chart__line');
+  const chartCandle = document.createElement('div');
+  chartCandle.classList.add('chart__line_candle');
+  chartCandle.style.height = dataValue.points / maxPoints * 100 + '%';
+  const chartTitle = document.createElement('span');
+  chartTitle.classList.add('chart__line_title');
+  const chartTitleText = document.createTextNode(dataValue.date);
+  chartTitle.appendChild(chartTitleText);
+  chartLine.appendChild(chartCandle);
+  chartLine.appendChild(chartTitle);
+  chartParent.appendChild(chartLine);
+});
+// testData.forEach((item) => {
+//     chartParent.append()
+// })
+
+{
+  /* <div class="chart__line"> */
+}
+{
+  /* <div class="chart__line_candle"></div> */
+}
+{
+  /* <span class="chart__line_title">24 сен</span> */
+}
+{
+  /* </div> */
+}
+
+/***/ }),
+
+/***/ "./src/js/components/selector.js":
+/*!***************************************!*\
+  !*** ./src/js/components/selector.js ***!
+  \***************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+const selectorBtn = document.querySelector('.selector__btn');
+const selector = document.querySelector('.successes__selector');
+selectorBtn.addEventListener("click", () => {
+  console.log('click');
+  selector.classList.toggle('active');
+});
+
 /***/ })
 
 /******/ 	});
@@ -10753,6 +10861,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_functions.js */ "./src/js/_functions.js");
 
 
+
+// const ctx = document.getElementById('myChart');
+
+// new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+//         datasets: [{
+//             label: '# of Votes',
+//             data: [12, 19, 3, 5, 2, 3],
+//             borderWidth: 1
+//         }]
+//     },
+//     options: {
+//         scales: {
+//             y: {
+//                 beginAtZero: true
+//             }
+//         }
+//     }
+// });
+
+// test
+
+// const maxValue = 200;
+// const percentValue = maxValue * (50 / 100);
+// const item = document.querySelector('.graph__col_one').style.height = `${percentValue}%`
+// console.log(maxValue * (40 / 100));
 })();
 
 /******/ })()
