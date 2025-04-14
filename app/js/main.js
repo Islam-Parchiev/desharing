@@ -10588,8 +10588,8 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper', {
   },
   // Navigation arrows
   navigation: {
-    nextEl: '.slider__btn_left',
-    prevEl: '.slider__btn_right'
+    nextEl: '.slider__btn_right',
+    prevEl: '.slider__btn_left'
   },
   // And if we need scrollbar
   scrollbar: {
