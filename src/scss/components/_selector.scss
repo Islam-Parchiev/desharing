@@ -1,0 +1,61 @@
+.selector {
+    background: var(--light-color);
+    overflow: hidden;
+    width: 168px;
+    min-height: 44px;
+    max-height: 44px;
+    border: 1px solid #303030;
+    border-radius: 24px;
+    transition: all 1.5s ease;
+
+    &__header {
+        padding: 12px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 143%;
+            color: #303030;
+        }
+    }
+
+    &__btn {
+        svg {
+            transition: all 1s ease;
+        }
+    }
+
+    &__body {
+        width: 100%;
+        background: var(--light-color);
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        padding: 12px 15px;
+        border-top: 1px solid #303030;
+    }
+
+    &.active {
+        transition: all 1.5s ease;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        max-height: 150px;
+
+        .selector__body {
+            padding: 12px 15px;
+            border-top: 1px solid #303030;
+            border-radius: 0 0 24px 24px;
+
+        }
+
+        .selector__btn svg {
+            transform: rotate(180deg);
+        }
+    }
+
+
+}

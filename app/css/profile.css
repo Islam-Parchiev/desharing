@@ -214,6 +214,20 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+.successes__results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.successes__footer {
+  padding-top: 30px;
+}
 
 .selector {
   background: var(--light-color);
@@ -383,6 +397,79 @@ a {
   width: 44px;
   max-height: 200px;
   background-color: var(--primary-green);
+}
+
+.results-card {
+  border-radius: 32px;
+  padding: 32px;
+  width: 384px;
+  height: 212px;
+  background-color: var(--neutral-lightest);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  gap: 24px;
+}
+.results-card__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #303030;
+}
+.results-card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.results-card__info span {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 44px;
+  text-align: center;
+  color: #303030;
+}
+.results-card__percent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 28px;
+  padding: 4px 12px 4px 8px;
+  width: 97px;
+  height: 36px;
+  background-color: #ebfaf3;
+}
+.results-card__percent span {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  color: #1baa7d;
+}
+.results-card__summary {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: #7d7979;
 }
 
 .footer {

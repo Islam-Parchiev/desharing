@@ -1,0 +1,89 @@
+.chart {
+    border-radius: 32px;
+    padding: 32px 32px 40px 32px;
+    width: 100%;
+    height: 357px;
+    background-color: var(--neutral-lightest);
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__body {
+        padding-bottom: 40px;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        gap: 20px;
+    }
+
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--neutral-darkest);
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &_btn {
+            border: 1px solid #303030;
+            border-radius: 50px;
+            padding: 8px;
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    &__points {
+        padding-bottom: 50px;
+
+
+        &_item {
+            text-align: right;
+            margin-top: 32px;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 143%;
+            color: #7d7979;
+        }
+    }
+
+    &__lines {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__line {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: end;
+        height: 200px;
+
+        &_title {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 143%;
+            text-align: center;
+            color: #7d7979;
+        }
+
+        &_candle {
+            border-radius: 12px;
+            width: 44px;
+            max-height: 200px;
+            background-color: var(--primary-green);
+        }
+    }
+}

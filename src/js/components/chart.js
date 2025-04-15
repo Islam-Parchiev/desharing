@@ -1,6 +1,5 @@
 const chartParent = document.querySelector('.chart__lines');
 const maxPoints = 200;
-// const testData = [78, 200, 30, 100, 90];
 const testData = [{
         id: 1,
         points: 78,
@@ -57,7 +56,7 @@ const testData = [{
         date: "29 сен"
     }
 ]
-testData.forEach((dataValue, index) => {
+testData.forEach((dataValue) => {
 
 
     const chartLine = document.createElement('div');
@@ -83,16 +82,3 @@ testData.forEach((dataValue, index) => {
 
     chartParent.appendChild(chartLine);
 });
-// testData.forEach((item) => {
-//     chartParent.append()
-// })
-
-{
-    /* <div class="chart__line"> */
-} {
-    /* <div class="chart__line_candle"></div> */
-} {
-    /* <span class="chart__line_title">24 сен</span> */
-} {
-    /* </div> */
-}
