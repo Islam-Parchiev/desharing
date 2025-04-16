@@ -1,3 +1,5 @@
+@use './mixins/breakpoint'as breakpoint;
+
 *,
 *::before,
 *::after {
@@ -29,7 +31,7 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройкуpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionposition
+  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройкуpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionposition
 }
 
 .is-hidden {
@@ -133,6 +135,14 @@ a {
   font-size: 44px;
   text-align: center;
   color: var(--neutral-darkest);
+
+  @include breakpoint.pre-mobile {
+    font-size: 37px;
+  }
+
+  @include breakpoint.mobile {
+    font-size: 31px;
+  }
 }
 
 .swiper {
