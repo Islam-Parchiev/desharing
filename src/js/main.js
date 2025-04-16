@@ -1,6 +1,12 @@
 import './_components.js';
 import './_functions.js';
-
+const inner = document.querySelector('.mobile-menu__inner');
+const burger = document.querySelector('.header__burger');
+const menu = document.querySelector('.mobile-menu');
+inner.addEventListener('click', () => {
+    menu.classList.remove('menu--active');
+    burger.classList.remove('burger--active');
+})
 // const ctx = document.getElementById('myChart');
 
 // new Chart(ctx, {
