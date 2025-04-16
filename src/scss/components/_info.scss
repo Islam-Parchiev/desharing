@@ -1,10 +1,23 @@
 @use './../mixins/mini'as mini;
+@use './../mixins/breakpoint'as breakpoint;
 
 .info {
+    &__inner {
+        padding-top: 5%;
+    }
+
     &__list {
         @include mini.flex-all-center;
         flex-wrap: wrap;
         gap: 110px;
+
+        @include breakpoint.pre-mobile {
+            gap: 50px;
+        }
+
+        @include breakpoint.small-mobile {
+            gap: 20px;
+        }
     }
 
     &__item {
@@ -17,6 +30,10 @@
             font-weight: 700;
             font-size: 92px;
             color: var(--text-color);
+
+            @include breakpoint.pre-mobile {
+                font-size: 71px;
+            }
         }
 
         p {
@@ -26,6 +43,10 @@
             line-height: 175%;
             text-align: center;
             color: var(--text-color);
+
+            @include breakpoint.pre-mobile {
+                font-size: 12px;
+            }
         }
     }
 }
