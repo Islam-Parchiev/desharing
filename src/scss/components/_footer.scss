@@ -1,6 +1,8 @@
+@use './../mixins/breakpoint'as breakpoint;
+
 .footer {
     width: 100%;
-    height: 512px;
+    min-height: 512px;
     background-color: #494949;
 
     &__logo {
@@ -29,12 +31,26 @@
             flex-direction: column;
             align-items: start;
         }
+
+        @include breakpoint.tablet {
+            flex-direction: column;
+            gap: 30px;
+        }
     }
 
     &__cols {
         display: flex;
         align-items: start;
         gap: 82px;
+
+        @include breakpoint.tablet {
+            gap: 60px;
+        }
+
+        @include breakpoint.small-tablet {
+            justify-content: start;
+            flex-wrap: wrap;
+        }
     }
 
     &__col {
@@ -86,6 +102,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            @include breakpoint.small-tablet {
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
         }
     }
 
@@ -130,8 +152,5 @@
             align-items: start;
             gap: 15px;
         }
-    }
-    &__social {
-        
     }
 }
