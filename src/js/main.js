@@ -3,9 +3,11 @@ import './_functions.js';
 const inner = document.querySelector('.mobile-menu__inner');
 const burger = document.querySelector('.header__burger');
 const menu = document.querySelector('.mobile-menu');
+const body = document.querySelector('.page__body');
 inner.addEventListener('click', () => {
     menu.classList.remove('menu--active');
     burger.classList.remove('burger--active');
+    body.classList.remove('dis-scroll');
 })
 // const ctx = document.getElementById('myChart');
 
