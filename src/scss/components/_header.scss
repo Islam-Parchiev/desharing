@@ -1,8 +1,12 @@
-// ваш код
+@use "./../mixins/breakpoint"as breakpoint;
+@use "./../mixins/burger"as burgerm;
+
 .header {
     width: 100%;
     height: 75px;
     border-bottom: 1px solid #d6d6d6;
+
+    position: relative;
 
     &__container {
         height: 100%;
@@ -14,6 +18,7 @@
         align-items: center;
         justify-content: space-between;
     }
+
 
     &__list {
         display: flex;
@@ -34,8 +39,68 @@
     }
 
     &__btn {
+        max-width: 92px;
         font-weight: 600;
         font-size: 16px;
-        color: #fff;
+        color: var(--light-color);
     }
+
+    &__burger {
+        display: none;
+
+        &.burger--active {
+            color: var(--light-color);
+        }
+    }
+
+    &__mobile_menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--primary-green);
+        opacity: 0.8;
+
+        &.menu--active {
+            display: block;
+        }
+    }
+
+    @include breakpoint.middle-tablet {
+        &__nav {
+            display: none;
+        }
+
+        &__inner {
+            justify-content: start;
+        }
+
+        &__logo {
+            margin-right: auto;
+        }
+
+        &__btn {
+            margin-right: 5%;
+        }
+
+        &__burger {
+            display: block;
+        }
+
+    }
+
+    @include breakpoint.small-mobile {
+        &__btn {
+            display: none;
+        }
+    }
+}
+
+.burger {
+    @include burgerm.burger;
+    z-index: 110;
+
 }

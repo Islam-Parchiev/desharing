@@ -22,7 +22,9 @@
   <div class="container header__container">
     <div class="header__inner">
       <div class="header__logo">
-        <img src="./../img/svg/logo.svg" alt="Logotype">
+        <a href="/">
+          <img src="./../img/svg/logo.svg" alt="Logotype">
+        </a>
       </div>
       <nav class="header__nav">
         <ul class="list-reset header__list">
@@ -35,10 +37,16 @@
           <li class="header__list_item">
             <a href="#">Контакты</a>
           </li>
+          <li class="header__list_item">
+            <a href="/profile.html">Профиль</a>
+          </li>
         </ul>
       </nav>
       <button class="btn-reset btn btn--primary header__btn">
         Войти
+      </button>
+      <button class="btn-reset burger header__burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
       </button>
     </div>
   </div>

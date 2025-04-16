@@ -9,8 +9,7 @@
 @use "./components/header"as header;
 
 
-@use "./components/subjects"as subjects;
-
+/* bit components:*/
 @use "./components/hero"as hero;
 @use "./components/info"as info;
 @use "./components/learn"as learn;
@@ -18,7 +17,9 @@
 @use "./components/subscription"as subscription;
 @use "./components/question"as question;
 
-
+/* small components:*/
+@use "./components/subjects"as subjects;
+@use "./components/mobile-menu"as mobile-menu;
 
 @use "./components/footer"as footer;
 
