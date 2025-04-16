@@ -1,3 +1,5 @@
+@use'./../mixins/breakpoint'as breakpoint;
+
 .reviews {
     min-height: 500px;
     background-image: url("./../../img/Reviews/bg.png");
@@ -38,6 +40,23 @@
             display: flex;
             align-items: center;
             gap: 16px;
+
+            @include breakpoint.post-tablet {
+                display: none;
+            }
+        }
+
+        &_pagination {
+            display: none;
+            position: initial;
+
+            @include breakpoint.post-tablet {
+                display: block;
+
+                .swiper-pagination-bullet {
+                    background-color: var(--primary-green);
+                }
+            }
         }
 
         &_btn {

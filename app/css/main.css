@@ -691,6 +691,23 @@ a {
   align-items: center;
   gap: 16px;
 }
+@media (max-width: 967px) {
+  .reviews__slider_navigation {
+    display: none;
+  }
+}
+.reviews__slider_pagination {
+  display: none;
+  position: initial;
+}
+@media (max-width: 967px) {
+  .reviews__slider_pagination {
+    display: block;
+  }
+  .reviews__slider_pagination .swiper-pagination-bullet {
+    background-color: var(--primary-green);
+  }
+}
 .reviews__slider_btn {
   display: -webkit-box;
   display: -ms-flexbox;
