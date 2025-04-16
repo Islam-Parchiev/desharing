@@ -9,12 +9,15 @@
 @use "./components/header"as header;
 
 
+@use "./components/subjects"as subjects;
+
 @use "./components/hero"as hero;
 @use "./components/info"as info;
 @use "./components/learn"as learn;
 @use "./components/reviews"as reviews;
 @use "./components/subscription"as subscription;
 @use "./components/question"as question;
+
 
 
 @use "./components/footer"as footer;

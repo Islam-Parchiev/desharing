@@ -10559,7 +10559,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-if (window.location.pathname === '/main.html') {
+if (window.location.pathname === '/profile.html') {
   __webpack_require__.e(/*! import() */ "src_js_components_selector_js").then(__webpack_require__.bind(__webpack_require__, /*! ./components/selector.js */ "./src/js/components/selector.js"));
   __webpack_require__.e(/*! import() */ "src_js_components_chart_js").then(__webpack_require__.bind(__webpack_require__, /*! ./components/chart.js */ "./src/js/components/chart.js"));
   console.log('test');

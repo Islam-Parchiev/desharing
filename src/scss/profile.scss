@@ -7,15 +7,17 @@
 
 
 @use "./components/header"as header;
-
+/*big components:*/
 @use "./components/successes"as successes;
 @use "./components/selector"as selector;
 @use "./components/chart"as chart;
 @use "./components/results-card"as results-card;
 @use "./components/continue"as continue;
 @use "./components/top-classmates"as top-classmates;
+@use "./components/other-subjects"as other-subjects;
 
-
+/* small components:*/
+@use "./components/subjects"as subjects;
 
 @use "./components/footer"as footer;
 
