@@ -41,6 +41,12 @@
   }
 }
 
+@mixin first-middle-tablet {
+  @media (max-width: (860px)) {
+    @content;
+  }
+}
+
 @mixin middle-tablet {
   @media (max-width: (800px)) {
     @content;

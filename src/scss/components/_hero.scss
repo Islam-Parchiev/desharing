@@ -34,6 +34,7 @@
         }
 
         @include breakpoint.mobile {
+            min-height: initial;
             flex-direction: column;
             overflow: hidden;
         }

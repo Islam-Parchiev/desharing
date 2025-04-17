@@ -1,3 +1,5 @@
+@use './../mixins/breakpoint'as breakpoint;
+
 .other-subjects {
     &__inner {
         padding-top: 40px;
@@ -6,13 +8,57 @@
 
     &__list {
         width: 100%;
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+
+        grid-auto-rows: 100px;
+        row-gap: 10%;
+        column-gap: 2%;
+
+        @include breakpoint.middle-tablet {
+            grid-template-columns: 50% 50%;
+            justify-content: center;
+            row-gap: 0;
+        }
+
+        @include breakpoint.first-middle-tablet {
+            grid-template-columns: 50% 50%;
+            justify-content: center;
+            row-gap: 0;
+        }
+
+        @include breakpoint.pre-mobile {
+            grid-template-columns: 100%;
+            row-gap: 0;
+        }
     }
 
     &__item {
-        flex-grow: 1;
+        width: 100%;
+
+        @include breakpoint.first-middle-tablet {
+            grid-column: span 1;
+        }
+
+        @include breakpoint.middle-tablet {
+            grid-column: span 2;
+        }
+    }
+
+    &__item:last-child {
+        grid-column: 3 span;
+
+        @include breakpoint.first-middle-tablet {
+            grid-column: 2 span;
+        }
+
+        @include breakpoint.middle-tablet {
+            grid-column: 2 span;
+        }
+
+        @include breakpoint.pre-mobile {
+            grid-column: auto;
+        }
     }
 
     &__top {

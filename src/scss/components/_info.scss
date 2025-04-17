@@ -2,16 +2,29 @@
 @use './../mixins/breakpoint'as breakpoint;
 
 .info {
+
+
     &__inner {
+        height: 100%;
         padding-top: 5%;
+
+        @include breakpoint.mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 5%;
+        }
     }
 
     &__list {
+        height: 100%;
         @include mini.flex-all-center;
         flex-wrap: wrap;
         gap: 110px;
 
         @include breakpoint.pre-mobile {
+            height: 60vh;
+            align-items: end;
             gap: 50px;
         }
 
