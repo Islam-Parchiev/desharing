@@ -1,27 +1,27 @@
 @use './../mixins/breakpoint'as breakpoint;
 
 .hero {
+    padding-top: 32px;
     width: 100%;
     height: 60vh;
-    padding-top: 32px;
 
     &__container {
         height: 100%;
     }
 
     &__inner {
-        max-width: 100%;
-        min-height: 485px;
-        height: 100%;
         display: flex;
-        justify-content: center;
         align-items: end;
-        gap: 38px;
+        justify-content: center;
+        border-radius: 20px;
+        height: 100%;
+        min-height: 485px;
+        max-width: 100%;
         background-image: url("./../../img/Hero/hero_bg.jpg");
-        background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        border-radius: 20px;
+        background-repeat: no-repeat;
+        gap: 38px;
 
         @include breakpoint.pre-tablet {
             padding-left: 2%;
@@ -34,47 +34,45 @@
         }
 
         @include breakpoint.mobile {
-            min-height: initial;
             flex-direction: column;
             overflow: hidden;
+            min-height: initial;
         }
     }
 
 
 
     &__info {
-        padding-top: 50px;
-        max-width: 490px;
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: start;
+        padding-top: 50px;
+        height: 100%;
+        max-width: 490px;
 
         p {
-            max-width: 350px;
             margin-top: 20px;
+            max-width: 350px;
         }
 
         @include breakpoint.pre-tablet {
+            justify-content: center;
             padding-top: 0;
             height: 100%;
-            justify-content: center;
         }
 
         @include breakpoint.mobile {
-            padding-right: 10px;
-            padding-top: 10%;
             justify-content: start;
+            padding-top: 10%;
+            padding-right: 10px;
             background-image: url("./../../img/Hero/hero_image.png");
             background-position: 200% 200%;
-            background-repeat: no-repeat;
             background-size: 85% 85%;
+            background-repeat: no-repeat;
         }
     }
 
     &__image {
-
-
         @include breakpoint.pre-tablet {
             display: flex;
             flex-direction: column;

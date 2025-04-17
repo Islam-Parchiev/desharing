@@ -1,13 +1,13 @@
 // базовые подключения
 @use "vars"as vars;
+
 // @use "mixins"as mixins;
 // @import "./../mixins/mini";
 @use "fonts"as fonts;
 @use "settings"as settings;
-
-
 @use "./components/header"as header;
-/*big components:*/
+
+/* big components: */
 @use "./components/successes"as successes;
 @use "./components/selector"as selector;
 @use "./components/chart"as chart;
@@ -16,10 +16,9 @@
 @use "./components/top-classmates"as top-classmates;
 @use "./components/other-subjects"as other-subjects;
 
-/* small components:*/
+/* small components: */
 @use "./components/subjects"as subjects;
 @use "./components/mobile-menu"as mobile-menu;
-
 @use "./components/footer"as footer;
 
 h1,

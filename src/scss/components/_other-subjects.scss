@@ -7,23 +7,21 @@
     }
 
     &__list {
-        width: 100%;
         display: grid;
-        grid-template-columns: 33% 33% 33%;
-
         grid-auto-rows: 100px;
-        row-gap: 10%;
-        column-gap: 2%;
+        grid-template-columns: 33% 33% 33%;
+        width: 100%;
+        gap: 10% 2%;
 
         @include breakpoint.middle-tablet {
-            grid-template-columns: 50% 50%;
             justify-content: center;
+            grid-template-columns: 50% 50%;
             row-gap: 0;
         }
 
         @include breakpoint.first-middle-tablet {
-            grid-template-columns: 50% 50%;
             justify-content: center;
+            grid-template-columns: 50% 50%;
             row-gap: 0;
         }
 
@@ -62,8 +60,8 @@
     }
 
     &__top {
-        width: 100%;
         padding-top: 50px;
+        width: 100%;
     }
 
     &__bottom {

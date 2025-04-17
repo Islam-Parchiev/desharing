@@ -9,23 +9,23 @@
     }
 
     &__tabs {
-        margin-top: 40px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
+        margin-top: 40px;
         border-radius: 28px;
         width: 344px;
         height: 52px;
         background-color: var(--neutral-lightest);
+        gap: 20px;
     }
 
     &__tab {
-        cursor: pointer;
-        text-align: center;
-        padding: 12px 0px;
+        padding: 12px 0;
         width: 50%;
         height: 100%;
+        text-align: center;
+        cursor: pointer;
 
         span {
             font-family: var(--font-family);
@@ -52,11 +52,11 @@
 
     &__header {
         th {
-            text-align: left;
             font-family: var(--font-family);
             font-weight: 400;
             font-size: 16px;
             line-height: 175%;
+            text-align: left;
             color: #7d7979;
 
             @include breakpoint.mobile {
@@ -71,19 +71,19 @@
     height: 80px;
 
     &__place {
-        height: 60px;
         display: flex;
         align-items: center;
         justify-content: start;
+        height: 60px;
 
         div {
+            position: relative;
             width: 32px;
             height: 32px;
-            position: relative;
             background-image: url("./../../img/svg/star.svg");
-            background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            background-repeat: no-repeat;
 
             @include breakpoint.mobile {
                 width: 29px;
@@ -94,15 +94,15 @@
 
         span {
             position: absolute;
-            z-index: 11;
             left: 35%;
             top: 50%;
-            transform: translateY(-50%);
+            z-index: 11;
             font-family: var(--second-family);
             font-weight: 600;
             font-size: 16px;
             line-height: 150%;
             text-align: center;
+            transform: translateY(-50%);
 
         }
     }
@@ -111,11 +111,11 @@
     &::after {
         content: "";
         position: absolute;
-        bottom: 0;
         left: 0;
+        bottom: 0;
+        z-index: 100;
         width: 100%;
         height: 1px;
-        z-index: 100;
         background-color: #d6d6d6;
     }
 

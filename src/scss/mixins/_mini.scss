@@ -20,7 +20,6 @@ $browser-context: 16; // Default
 }
 
 
-/* stylelint-disable */
 @mixin hover {
   @media (any-hover: hover) {
     &:hover {

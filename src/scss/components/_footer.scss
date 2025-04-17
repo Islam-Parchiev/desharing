@@ -48,8 +48,8 @@
         }
 
         @include breakpoint.small-tablet {
-            justify-content: start;
             flex-wrap: wrap;
+            justify-content: start;
         }
     }
 
@@ -104,12 +104,11 @@
 
         &_inner {
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
 
             @include breakpoint.small-tablet {
-                flex-direction: row-reverse;
-                flex-wrap: wrap;
+                flex-flow: row-reverse wrap;
                 gap: 20px;
             }
 
@@ -126,7 +125,6 @@
 
         &_item {
             a {
-
                 font-family: var(--font-family);
                 font-weight: 600;
                 font-size: 14px;
@@ -137,10 +135,10 @@
     }
 
     &__address {
-        max-width: 311px;
         display: flex;
         flex-direction: column;
         align-items: start;
+        max-width: 311px;
         gap: 10px;
 
         a {
@@ -153,11 +151,10 @@
     }
 
     &__socials {
-
         &_list {
-            padding-top: 10px;
             display: flex;
             align-items: start;
+            padding-top: 10px;
             gap: 15px;
         }
     }

@@ -1,25 +1,25 @@
 @use './../mixins/breakpoint'as breakpoint;
 
 .selector {
-    background: var(--light-color);
     overflow: hidden;
+    border: 1px solid #303030;
+    border-radius: 24px;
     width: 168px;
     min-height: 44px;
     max-height: 44px;
-    border: 1px solid #303030;
-    border-radius: 24px;
+    background: var(--light-color);
     transition: all 1.5s ease;
 
     @include breakpoint.mobile {
-        max-height: 30px;
         min-height: 30px;
+        max-height: 30px;
     }
 
     &__header {
-        padding: 12px 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 12px 15px;
 
         span {
             font-family: var(--font-family);
@@ -28,6 +28,7 @@
             line-height: 143%;
             color: #303030;
         }
+
         @include breakpoint.mobile {
             padding: 7px 15px;
         }
@@ -40,25 +41,25 @@
     }
 
     &__body {
-        width: 100%;
-        background: var(--light-color);
         display: flex;
         align-items: start;
         justify-content: start;
-        padding: 12px 15px;
         border-top: 1px solid #303030;
+        padding: 12px 15px;
+        width: 100%;
+        background: var(--light-color);
     }
 
     &.active {
-        transition: all 1.5s ease;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
         max-height: 150px;
+        transition: all 1.5s ease;
 
         .selector__body {
-            padding: 12px 15px;
             border-top: 1px solid #303030;
             border-radius: 0 0 24px 24px;
+            padding: 12px 15px;
 
         }
 

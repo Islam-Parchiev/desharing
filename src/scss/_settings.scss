@@ -35,8 +35,8 @@ a {
 }
 
 .is-hidden {
+  /* stylelint-disable-next-line declaration-no-important */
   display: none !important;
-  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -111,9 +111,9 @@ a {
     background: var(--primary-green);
 
     &:hover {
+      border: 1px solid var(--primary-green);
       color: var(--primary-green);
       background: var(--light-color);
-      border: 1px solid var(--primary-green);
     }
   }
 
@@ -122,9 +122,9 @@ a {
     background: var(--light-color);
 
     &:hover {
-      background-color: var(--primary-green);
-      color: var(--light-color);
       border: 1px solid var(--light-color);
+      color: var(--light-color);
+      background-color: var(--primary-green);
     }
   }
 }

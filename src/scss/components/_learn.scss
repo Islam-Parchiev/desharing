@@ -4,37 +4,35 @@
     min-height: 490px;
 
     &__inner {
-        padding-top: 80px;
-        padding-bottom: 80px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
         gap: 40px;
     }
 
     &__items {
-        width: 100%;
         padding: 0 2%;
+        width: 100%;
 
         &_top {
             display: flex;
+            flex-wrap: wrap;
             align-items: start;
             justify-content: center;
-            flex-wrap: wrap;
             gap: 32px;
         }
 
         &_list {
             display: grid;
-            grid-template-columns: 33% 33% 33%;
-
             grid-auto-rows: 100px;
-            row-gap: 5%;
-            column-gap: 2%;
+            grid-template-columns: 33% 33% 33%;
+            gap: 5% 2%;
 
             @include breakpoint.middle-tablet {
-                grid-template-columns: 50% 50%;
                 justify-content: center;
+                grid-template-columns: 50% 50%;
                 row-gap: 0;
             }
 

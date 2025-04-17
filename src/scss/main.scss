@@ -1,15 +1,14 @@
 // базовые подключения
 @use "vars"as vars;
+
 // @use "mixins"as mixins;
 // @import "./../mixins/mini";
 @use "fonts"as fonts;
 @use "settings"as settings;
-
-
 @use "./components/header"as header;
 
 
-/* bit components:*/
+/* bit components: */
 @use "./components/hero"as hero;
 @use "./components/info"as info;
 @use "./components/learn"as learn;
@@ -17,10 +16,9 @@
 @use "./components/subscription"as subscription;
 @use "./components/question"as question;
 
-/* small components:*/
+/* small components: */
 @use "./components/subjects"as subjects;
 @use "./components/mobile-menu"as mobile-menu;
-
 @use "./components/footer"as footer;
 
 h1,
