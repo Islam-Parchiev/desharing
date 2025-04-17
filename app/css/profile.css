@@ -978,6 +978,11 @@ a {
   line-height: 175%;
   color: #7d7979;
 }
+@media (max-width: 576px) {
+  .classmates-table__header th {
+    font-size: 12px;
+  }
+}
 
 .table-item {
   position: relative;
@@ -999,15 +1004,16 @@ a {
   width: 32px;
   height: 32px;
   position: relative;
+  background-image: url("./../../img/svg/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.table-item__place svg {
-  position: absolute;
-  z-index: 10;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+@media (max-width: 576px) {
+  .table-item__place div {
+    width: 29px;
+    height: 29px;
+  }
 }
 .table-item__place span {
   position: absolute;
@@ -1043,6 +1049,14 @@ a {
   font-size: 20px;
   line-height: 160%;
   color: var(--neutral-darkest);
+}
+@media (max-width: 576px) {
+  .table-item__points,
+  .table-item__done,
+  .table-item__name,
+  .table-item__time {
+    font-size: 16px;
+  }
 }
 
 .table-item__points {

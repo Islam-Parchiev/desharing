@@ -1,3 +1,5 @@
+@use './../mixins/breakpoint'as breakpoint;
+
 .top-classmates {
     &__inner {
         display: flex;
@@ -56,6 +58,10 @@
             font-size: 16px;
             line-height: 175%;
             color: #7d7979;
+
+            @include breakpoint.mobile {
+                font-size: 12px;
+            }
         }
     }
 }
@@ -74,15 +80,17 @@
             width: 32px;
             height: 32px;
             position: relative;
+            background-image: url("./../../img/svg/star.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            @include breakpoint.mobile {
+                width: 29px;
+                height: 29px;
+            }
         }
 
-        svg {
-            position: absolute;
-            z-index: 10;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-        }
 
         span {
             position: absolute;
@@ -122,6 +130,10 @@
     font-size: 20px;
     line-height: 160%;
     color: var(--neutral-darkest);
+
+    @include breakpoint.mobile {
+        font-size: 16px;
+    }
 }
 
 .table-item__points {
