@@ -1,3 +1,5 @@
+@use './../mixins/breakpoint'as breakpoint;
+
 .continue {
     &-subject {
         margin-bottom: 35px;
@@ -42,6 +44,11 @@
             text-align: center;
             color: var(--neutral-darkest);
         }
+
+        @include breakpoint.pre-tablet {
+            min-height: 230px;
+            height: auto;
+        }
     }
 
     &__subjects {
@@ -77,6 +84,12 @@
         display: flex;
         align-items: start;
         justify-content: space-between;
+
+        @include breakpoint.pre-tablet {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
     }
 
     &__bar {
@@ -122,11 +135,19 @@
     width: 354px;
     height: 60px;
 
+    @include breakpoint.pre-tablet {
+        width: 100%;
+        justify-content: space-between;
+    }
+
     &__icon {
         margin-right: 15px;
     }
 
     &__title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
         margin-right: 90px;
         font-family: var(--font-family);
         font-weight: 400;
