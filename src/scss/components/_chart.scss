@@ -1,3 +1,5 @@
+@use '../mixins/breakpoint'as breakpoint;
+
 .chart {
     border-radius: 32px;
     padding: 32px 32px 40px 32px;
@@ -5,10 +7,18 @@
     height: 357px;
     background-color: var(--neutral-lightest);
 
+    @include breakpoint.small-tablet {
+        padding: 3% 1% 3% 1%;
+    }
+
     &__header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include breakpoint.small-tablet {
+            justify-content: center;
+        }
     }
 
     &__body {
@@ -40,6 +50,10 @@
             width: 36px;
             height: 36px;
         }
+
+        @include breakpoint.small-tablet {
+            display: none;
+        }
     }
 
     &__points {
@@ -54,6 +68,10 @@
             font-size: 14px;
             line-height: 143%;
             color: #7d7979;
+
+            @include breakpoint.small-tablet {
+                text-align: left;
+            }
         }
     }
 
@@ -61,6 +79,10 @@
         display: flex;
         align-items: center;
         gap: 20px;
+
+        @include breakpoint.small-tablet {
+            overflow-y: scroll;
+        }
     }
 
     &__line {
@@ -81,7 +103,7 @@
 
         &_candle {
             border-radius: 12px;
-            width: 44px;
+            width: 100%;
             max-height: 200px;
             background-color: var(--primary-green);
         }

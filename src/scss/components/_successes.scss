@@ -1,4 +1,7 @@
+@use './../mixins/breakpoint'as breakpoint;
+
 .successes {
+
 
 
     &__title {
@@ -15,14 +18,43 @@
     }
 
     &__header {
+        position: relative;
         display: flex;
         justify-content: space-between;
+
+        @include breakpoint.small-mobile {
+
+            flex-direction: column;
+            align-items: start;
+
+        }
+    }
+
+    &__body {
+        margin-top: 30px;
+    }
+
+    &__selector {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        @include breakpoint.small-mobile {
+            position: initial;
+        }
     }
 
     &__results {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 2%;
+
+        @include breakpoint.post-tablet {
+            justify-content: center;
+            gap: 2%;
+            flex-wrap: wrap;
+        }
     }
 
     &__footer {
