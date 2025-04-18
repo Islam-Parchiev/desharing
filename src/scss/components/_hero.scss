@@ -1,4 +1,5 @@
 @use './../mixins/breakpoint'as breakpoint;
+@use './../mixins/mini'as mini;
 
 .hero {
     padding-top: 32px;
@@ -17,11 +18,12 @@
         height: 100%;
         min-height: 485px;
         max-width: 100%;
-        background-image: url("./../../img/Hero/hero_bg.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+
+        @include mini.bg-cover;
+
         gap: 38px;
+
+        @include mini.image-set("./../../img/Hero/hero_bg");
 
         @include breakpoint.pre-tablet {
             padding-left: 2%;

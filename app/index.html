@@ -28,7 +28,10 @@
     <div class="header__inner">
       <div class="header__logo">
         <a href="/">
-          <img src="./../img/svg/logo.svg" alt="Logotype">
+            <picture>
+              <source srcset="./../img/svg/logo.svg" type="image/svg+xml" />
+              <img src="./../img/svg/logo.svg" alt="Desharing Logo" />
+            </picture>
         </a>
       </div>
       <nav class="header__nav">
@@ -56,6 +59,7 @@
     </div>
   </div>
 </header>
+
     <div class="header__mobile_menu mobile-menu" data-menu>
     <div class="mobile-menu__inner">
         <nav class="mobile-menu__nav">
@@ -85,21 +89,25 @@
         <div class="hero__inner">
             <div class="hero__info">
                 <h1 class="hero__title">
-                    Учимся онлайн в пару кликов
+                  Учимся онлайн в пару кликов
                 </h1>
                 <p>
-                    Бесплатные вводые уроки на первые 14 учебных дней
+                  Бесплатные вводые уроки на первые 14 учебных дней
                 </p>
                 <button class="btn-reset btn btn--secondary hero__btn">
                     Записаться
                 </button>
             </div>
             <div class="hero__image">
+              <picture>
+                <source srcset="./../img/Hero/hero_image.webp" />
                 <img src="./../img/Hero/hero_image.png" alt="Hero section image">
+              </picture>
             </div>
         </div>
     </div>
 </section>
+
       <section class="info">
   <h2 class="info__title is-hidden">info section</h2>
     <div class="container">
@@ -170,14 +178,6 @@
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="learn__items_bottom">
-                    <ul class="list-reset learn__items">
-                        <li class="learn__item subjects-item">
-                            <h6>Полный каталог дисциплин</h6>
-                            <span>26 дисциплин</span>
-                        </li>
-                    </ul>
-                </div> -->
             </div>
         </div>
 </section>
@@ -226,9 +226,9 @@
                                 </div>
                                 <div class="slider__item_body">
                                     <p>
-                                        Очень полезные курсы. Все нравится, особенно методика преподавания. Хочу также
-                                        на другие
-                                        курсы
+                                      Очень полезные курсы. Все нравится, особенно методика преподавания. Хочу также
+                                      на другие
+                                      курсы
                                     </p>
                                 </div>
                                 <div class="slider__item_footer">
@@ -271,9 +271,9 @@
                                 </div>
                                 <div class="slider__item_body">
                                     <p>
-                                        Очень полезные курсы. Все нравится, особенно методика преподавания. Хочу также
-                                        на другие
-                                        курсы
+                                      Очень полезные курсы. Все нравится, особенно методика преподавания. Хочу также
+                                      на другие
+                                      курсы
                                     </p>
                                 </div>
                                 <div class="slider__item_footer">
@@ -316,9 +316,10 @@
                                 </div>
                                 <div class="slider__item_body">
                                     <p>
-                                        Очень полезные курсы. Все нравится, особенно методика преподавания. Хочу также
-                                        на другие
-                                        курсы
+                                      Очень полезные курсы. Все нравится, особенно методика преподавания. Хочу также
+                                      на другие
+                                      курсы
+
                                     </p>
                                 </div>
                                 <div class="slider__item_footer">
@@ -361,9 +362,9 @@
                                 </div>
                                 <div class="slider__item_body">
                                     <p>
-                                        Очень полезные курсы. Все нравится, особенно методика преподавания. Хочу также
-                                        на другие
-                                        курсы
+                                      Очень полезные курсы. Все нравится, особенно методика преподавания. Хочу также
+                                      на другие
+                                      курсы
                                     </p>
                                 </div>
                                 <div class="slider__item_footer">
@@ -406,9 +407,9 @@
                                 </div>
                                 <div class="slider__item_body">
                                     <p>
-                                        Очень полезные курсы. Все нравится, особенно методика преподавания. Хочу также
-                                        на другие
-                                        курсы
+                                      Очень полезные курсы. Все нравится, особенно методика преподавания. Хочу также
+                                      на другие
+                                      курсы
                                     </p>
                                 </div>
                                 <div class="slider__item_footer">
@@ -451,9 +452,9 @@
                                 </div>
                                 <div class="slider__item_body">
                                     <p>
-                                        Очень полезные курсы. Все нравится, особенно методика преподавания. Хочу также
-                                        на другие
-                                        курсы
+                                      Очень полезные курсы. Все нравится, особенно методика преподавания. Хочу также
+                                      на другие
+                                      курсы
                                     </p>
                                 </div>
                                 <div class="slider__item_footer">
@@ -581,6 +582,9 @@
                         </span>
                         <button class="btn-reset btn btn--secondary subscription__item_btn">Записаться</button>
                     </div>
+                    <div class="subscription__item_discount">
+                      <span>-10%</span>
+                    </div>
                 </li>
                 <li class="subscription__item subscription__item--secondary">
                     <div class="subscription__item_header">
@@ -631,6 +635,9 @@
                             2 499 ₽
                         </span>
                         <button class="btn-reset btn btn--secondary subscription__item_btn">Записаться</button>
+                    </div>
+                    <div class="subscription__item_discount">
+                      <span>-10%</span>
                     </div>
                 </li>
                 <li class="subscription__item subscription__item--tertiary">
@@ -683,6 +690,9 @@
                         </span>
                         <button class="btn-reset btn btn--secondary subscription__item_btn">Записаться</button>
                     </div>
+                    <div class="subscription__item_discount">
+                      <span>-10%</span>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -697,6 +707,7 @@
         </div>
     </div>
 </section>
+
       <!-- <div>
         <canvas id="myChart"></canvas>
       </div> -->
@@ -709,8 +720,12 @@
       <div class="footer__main">
         <div class="footer__main_left">
           <div class="footer__logo">
-            <img src="./../img/svg/logoLight.svg" alt="Logotype">
+            <picture>
+              <source srcset="./../img/svg/logoLight.svg" type="image/svg+xml" />
+              <img src="./../img/svg/logoLight.svg" alt="Desharing Logo" loading="lazy" />
+            </picture>
           </div>
+
         </div>
         <div class="footer__cols">
           <div class="footer__col">

@@ -1,5 +1,5 @@
 @use'./../mixins/breakpoint'as breakpoint;
-@use './../mixins/disable-mob-hover'as disable-mob-hover;
+@use './../mixins/mini'as mini;
 
 .reviews {
     min-height: 500px;
@@ -68,7 +68,7 @@
             text-align: center;
             background-color: var(--neutral-lightest);
 
-          @include disable-mob-hover.hover {
+          @include mini.hover {
             &:hover {
               background-color: #6d6666;
             }
