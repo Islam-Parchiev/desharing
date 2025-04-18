@@ -1,4 +1,5 @@
 @use './../mixins/breakpoint'as breakpoint;
+@use './../mixins/disable-mob-hover'as disable-mob-hover;
 
 .subscription {
     &__inner {
@@ -73,7 +74,7 @@
                 color: var(--neutral-darkest);
             }
 
-            .info__list_item {
+            .subscription__info_item {
                 color: var(--neutral-darkest);
             }
 
@@ -89,7 +90,7 @@
                 color: var(--light-color);
             }
 
-            .info__list_item {
+            .subscription__info_item {
                 color: var(--light-color);
             }
 
@@ -105,7 +106,7 @@
                 color: var(--light-color);
             }
 
-            .info__list_item {
+            .subscription__info_item {
                 color: var(--light-color);
             }
 
@@ -114,9 +115,11 @@
             }
 
             .subscription__item_btn {
+              @include disable-mob-hover.hover {
                 &:hover {
-                    background: #7e48c0;
+                  background: #7e48c0;
                 }
+              }
             }
         }
 
@@ -127,7 +130,7 @@
     }
 }
 
-.info__list {
+.subscription__info {
     &_item {
         display: flex;
         align-items: center;

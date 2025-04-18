@@ -1,4 +1,5 @@
 @use './../mixins/breakpoint'as breakpoint;
+@use './../mixins/disable-mob-hover' as disable-mob-hover;
 
 .footer {
     width: 100%;
@@ -83,6 +84,16 @@
                 line-height: 167%;
                 color: #d6d6d6;
 
+                @include disable-mob-hover.hover {
+                  &:hover {
+                    color: #fffbfb;
+                  }
+                }
+
+                &:active {
+                  text-decoration: underline;
+                }
+
                 @include breakpoint.mobile {
                     font-size: 15px;
                 }
@@ -130,6 +141,13 @@
                 font-size: 14px;
                 line-height: 143%;
                 color: #d6d6d6;
+
+                @include disable-mob-hover.hover {
+                  &:hover {
+                    color: #fff;
+                  }
+                }
+
             }
         }
     }
@@ -147,6 +165,16 @@
             font-size: 14px;
             line-height: 167%;
             color: #d6d6d6;
+
+            @include disable-mob-hover.hover {
+              &:hover {
+                color: #fff;
+              }
+            }
+
+            &:active {
+              text-decoration: underline;
+            }
         }
     }
 
@@ -158,4 +186,14 @@
             gap: 15px;
         }
     }
+
+    &__social {
+      img {
+        @include disable-mob-hover.hover {
+          &:hover {
+            filter: drop-shadow(0 0 2px #d6d6d6);
+          }
+        }
+      }
+     }
 }

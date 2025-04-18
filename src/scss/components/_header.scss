@@ -1,5 +1,6 @@
 @use "./../mixins/breakpoint"as breakpoint;
 @use "./../mixins/burger"as burgerm;
+@use './../mixins/disable-mob-hover'as disable-mob-hover;
 
 .header {
     position: relative;
@@ -31,9 +32,11 @@
             line-height: 175%;
             color: #202020;
 
+            @include disable-mob-hover.hover {
             &:hover {
                 color: var(--primary-green);
             }
+          }
         }
     }
 
