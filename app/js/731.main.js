@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgulp_builder=self.webpackChunkgulp_builder||[]).push([[731],{731:(e,c,s)=>{s.r(c);const l=document.querySelector(".selector__btn"),t=document.querySelector(".successes__selector");l.addEventListener("click",(()=>{console.log("click"),t.classList.toggle("active")}))}}]);
