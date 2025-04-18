@@ -936,6 +936,12 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 576px) {
+  .subscription__item_discount {
+    right: 0;
+    top: 0;
+  }
+}
 .subscription__item_discount span {
   font-family: var(--font-family);
   font-weight: 600;
