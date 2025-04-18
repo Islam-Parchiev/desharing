@@ -23,7 +23,7 @@
 
         gap: 38px;
 
-        @include mini.image-set("./../../img/Hero/hero_bg");
+        @include mini.image-set("./../img/Hero/hero_bg");
 
         @include breakpoint.pre-tablet {
             padding-left: 2%;

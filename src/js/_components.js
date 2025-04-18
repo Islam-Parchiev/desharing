@@ -1,7 +1,8 @@
-if (window.location.pathname === '/profile.html') {
-    import('./components/selector.js');
-    import('./components/chart.js');
-    console.log('test');
+if(window.location.pathname.split(".")[0].split("/").includes("profile")) {
+  import('./components/chart.js');
+  import('./components/selector.js')
+  console.log('test');
 }
-console.log(window.location);
+
+console.log(window.location.pathname.split(".")[0].split("/").includes("profile"));
 console.log('components');
