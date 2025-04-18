@@ -135,7 +135,8 @@ a {
   box-shadow: 2px 2px 5px var(--primary-green);
 }
 .btn--primary:focus {
-  outline: 2px solid var(--black-color);
+  -webkit-box-shadow: 2px 2px 5px var(--primary-green);
+  box-shadow: 2px 2px 5px var(--primary-green);
 }
 .btn--secondary {
   color: var(--black-color);
@@ -153,7 +154,8 @@ a {
   box-shadow: 2px 2px 5px var(--light-color);
 }
 .btn--secondary:focus {
-  outline: 2px solid var(--black-color);
+  -webkit-box-shadow: 2px 2px 5px var(--light-color);
+  box-shadow: 2px 2px 5px var(--light-color);
 }
 
 .section__title {
