@@ -120,8 +120,13 @@ a {
   }
 }
 
+
 &:active {
   box-shadow: 2px 2px 5px var(--primary-green);
+}
+
+&:focus {
+  outline:2px solid var(--black-color);
 }
   }
 
@@ -139,6 +144,10 @@ a {
 
     &:active {
       box-shadow: 2px 2px 5px var(--light-color);
+    }
+
+    &:focus {
+      outline:2px solid var(--black-color);
     }
   }
 }

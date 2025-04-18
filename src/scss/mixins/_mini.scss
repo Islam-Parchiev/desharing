@@ -11,7 +11,11 @@ $browser-context: 16; // Default
   background-image: image-set("#{$pathToImage}.webp"type("image/webp"),
     "#{$pathToImage}.jpg"type("image/jpg"));
 }
-
+@mixin image-set-png($pathToImage) {
+  background-image: url("#{$pathToImage}.png");
+  background-image: image-set("#{$pathToImage}.webp"type("image/webp"),
+    "#{$pathToImage}.png"type("image/png"));
+}
 @mixin footerToBottom {
   display: grid;
   grid-template-columns: 100%;

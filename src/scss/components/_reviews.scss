@@ -3,7 +3,9 @@
 
 .reviews {
     min-height: 500px;
-    background-image: url("./../img/Reviews/bg.png");
+
+    @include mini.image-set-png("./../img/Reviews/bg");
+
     background-position: right 150px top 10px;
     background-size: 480px 480px;
     background-repeat: no-repeat;
@@ -76,6 +78,10 @@
 
           &:active {
             border:1px solid #000;
+          }
+
+          &:focus {
+            outline:2px solid var(--primary-green);
           }
         }
     }

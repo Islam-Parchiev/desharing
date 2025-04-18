@@ -8,6 +8,26 @@
     width: 100%;
     height: 75px;
 
+    &__logo {
+      width: 188px;
+      height: 28px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      a {
+        &:focus {
+          outline:2px solid var(--primary-green);
+        }
+      }
+
+
+    }
+
     &__container {
         height: 100%;
     }
@@ -37,6 +57,10 @@
                 color: var(--primary-green);
             }
           }
+
+          &:focus {
+            outline:2px solid var(--primary-green);
+          }
         }
     }
 
@@ -45,6 +69,7 @@
         font-weight: 600;
         font-size: 16px;
         color: var(--light-color);
+        
     }
 
     &__burger {
